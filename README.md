@@ -1,7 +1,7 @@
 # NovaCrypto
 Repository for NVA Token and Nova Farm
 
-# Live Website
+# Live Farming Website
 https://farm.novaservices.tk
 
 # ADDRESSES
