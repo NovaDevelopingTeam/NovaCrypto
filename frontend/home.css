@@ -1,0 +1,222 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1e1e1e;
+}
+.home-text {
+  color: #49c940;
+  font-size: 60px;
+}
+.home-container1 {
+  width: 546px;
+  height: 257px;
+  display: flex;
+  position: relative;
+  margin-top: 60px;
+  align-items: flex-start;
+  border-color: #363535;
+  border-style: ridge;
+  border-width: 2px;
+  border-radius: var(--dl-radius-radius-radius8);
+  justify-content: center;
+  background-color: #1a1a1a;
+}
+.home-textinput {
+  top: 49px;
+  left: 91px;
+  color: #ffffff;
+  width: 81px;
+  position: absolute;
+  text-align: center;
+  padding-right: 0px;
+  background-color: #1e1e1e;
+  border-top-left-radius: var(--dl-radius-radius-radius8);
+  border-top-right-radius: var(--dl-radius-radius-radius8);
+  border-bottom-left-radius: var(--dl-radius-radius-radius8);
+  border-bottom-right-radius: var(--dl-radius-radius-radius8);
+}
+.home-textinput1 {
+  top: 49px;
+  left: 382px;
+  color: #ffffff;
+  width: 81px;
+  position: absolute;
+  text-align: center;
+  padding-right: 0px;
+  background-color: #1e1e1e;
+  border-top-left-radius: var(--dl-radius-radius-radius8);
+  border-top-right-radius: var(--dl-radius-radius-radius8);
+  border-bottom-left-radius: var(--dl-radius-radius-radius8);
+  border-bottom-right-radius: var(--dl-radius-radius-radius8);
+}
+.home-text03 {
+  top: 28px;
+  left: 77px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+}
+.home-text06 {
+  top: 28px;
+  left: 382px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+}
+.home-text09 {
+  top: 28px;
+  left: 214px;
+  color: #a4a4a4;
+  position: absolute;
+}
+.home-button {
+  top: 129px;
+  left: 0px;
+  color: #ffffff;
+  right: 0px;
+  width: 192px;
+  height: 42px;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #69bcef;
+}
+.home-button1 {
+  top: 181px;
+  left: 175px;
+  color: #ffffff;
+  width: 192px;
+  height: 42px;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #717171;
+}
+.home-button2 {
+  left: 15px;
+  color: #ffffff;
+  width: 192px;
+  bottom: -377px;
+  height: 42px;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #69bcef;
+}
+.home-button3 {
+  color: #ffffff;
+  right: 15px;
+  width: 192px;
+  bottom: -377px;
+  height: 42px;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #69bcef;
+}
+.home-text17 {
+  top: 91px;
+  left: 134px;
+  color: rgb(164, 164, 164);
+  position: absolute;
+}
+.home-text18 {
+  top: 230px;
+  left: 165px;
+  color: rgb(164, 164, 164);
+  position: absolute;
+}
+.home-container2 {
+  width: 546px;
+  height: 257px;
+  display: flex;
+  position: relative;
+  margin-top: 60px;
+  align-items: flex-start;
+  border-color: #363535;
+  border-style: ridge;
+  border-width: 2px;
+  border-radius: var(--dl-radius-radius-radius8);
+  justify-content: center;
+  background-color: #1a1a1a;
+}
+.home-text23 {
+  top: 28px;
+  left: 214px;
+  color: rgb(164, 164, 164);
+  position: absolute;
+}
+.home-text26 {
+  top: 102px;
+  left: 91px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+}
+.home-text29 {
+  top: 75px;
+  left: 91px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+}
+.home-text32 {
+  top: 102px;
+  color: rgb(255, 255, 255);
+  right: 37px;
+  position: absolute;
+}
+.home-text35 {
+  top: 75px;
+  color: rgb(255, 255, 255);
+  right: 40px;
+  position: absolute;
+}
+.home-text38 {
+  top: 150px;
+  left: 216px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+}
+.home-text41 {
+  top: 175px;
+  left: 237px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+}
+.home-button4 {
+  top: 5px;
+  color: #ffffff;
+  right: 2px;
+  width: 192px;
+  height: 42px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #69bcef;
+}
+.home-button5 {
+  top: 5px;
+  left: 2px;
+  color: #ffffff;
+  width: 192px;
+  height: 42px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #bf2626;
+}
+@media(max-width: 767px) {
+  .home-button4 {
+    top: 76px;
+    right: 1px;
+  }
+  .home-button5 {
+    top: 76px;
+    right: 1px;
+  }
+}

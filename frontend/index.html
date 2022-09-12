@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Stark Smart Ibis</title>
+    <meta property="og:title" content="Stark Smart Ibis" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <label class="home-text">
+          <span>Nova Farming</span>
+          <br />
+        </label>
+        <div class="home-container1">
+          <input
+            type="text"
+            id="DAI"
+            onkeypress="calcNVA(event)"
+            oninput="calcNVA(event)"
+            onpaste="calcNVA(event)"
+            placeholder="DAI"
+            class="home-textinput input"
+          />
+          <input
+            type="text"
+            id="NVA"
+            oninput="calcDAI(event)"
+            onkeypress="calcNVA(event)"
+            onpaste="calcNVA(event)"
+            placeholder="NVA"
+            class="home-textinput1 input"
+          />
+          <span class="home-text03">
+            <span>DAI to stake</span>
+            <br />
+          </span>
+          <span class="home-text06">
+            <span>NVA Yearly</span>
+            <br />
+          </span>
+          <span class="home-text09">[ESTIMATED]</span>
+          <button id="approve-btn" class="home-button button" onclick="reqApprove()"><span>APPROVE</span></button>
+          <button id="stake-btn" class="home-button1 button" disabled onclick="stake()"><span>STAKE</span></button>
+          <button class="home-button2 button" onclick="unstake()"><span>UNSTAKE</span></button>
+          <button onclick="withdrawYield()" class="home-button3 button">
+            <span>
+              <span>CLAIM</span>
+              <span>NVA</span>
+              <br />
+            </span>
+          </button>
+          <span class="home-text17">
+            <span>Remember: after staking you will need</span>
+            <br />
+            <span>to wait</span>
+            <span>at least 80 days to unstake</span>
+            <br />
+          </span>
+          <span class="home-text18">The APY in NVA is: 1100.05%</span>
+        </div>
+        <div class="home-container2">
+          <span class="home-text23">
+            <span>Currently Staking</span>
+            <br />
+          </span>
+          <span class="home-text26">
+            <span id="staked">0.00</span>
+            <br />
+          </span>
+          <span class="home-text29">
+            <span>Staked DAI</span>
+            <br />
+          </span>
+          <span class="home-text32">
+            <span id="reward">0.00</span>
+            <br />
+          </span>
+          <span class="home-text35">
+            <span>NVA for this stake</span>
+            <br />
+          </span>
+        </div>
+        <button onclick="connect()" class="home-button4 button">
+          <span>
+            <span>Connect Wallet</span>
+            <br />
+          </span>
+        </button>
+        <button class="home-button5 button">
+          <span>
+            <span>BURN NVA</span>
+            <br />
+          </span>
+        </button>
+      </div>
+    </div>
+    <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js"
+        charset="utf-8"
+        type="text/javascript">
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
